@@ -1,0 +1,96 @@
+/* Standardize child theme styling */
+#comments ol.commentlist {
+	background: transparent;
+}
+.builder-module-sidebar {
+	background: transparent;
+}
+.site-title a:hover,
+.site-tagline a:hover {
+	font-size: inherit;
+}
+
+
+
+/* Style Manager generated css */
+.builder-container-outer-wrapper {
+	background-color: #FFFFFF;
+	background-image: none;
+}
+.builder-module-sidebar-with-element .widget {
+	color: #030505;
+	font-size: 15px;
+	text-align: left;
+}
+.builder-module-sidebar-with-element .widget a {
+	text-decoration: none;
+}
+.builder-module.builder-module-content {
+	background-color: #FFFFFF;
+}
+.hentry {
+	font-size: 17px;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: none;
+}
+
+
+/* Style Manager custom css */
+#nav_menu-2 {
+	padding:1px;
+	background:#F0F3EB;
+}
+
+#nav_menu-3 {
+	padding:1px;
+	background:#F0F3EB;
+}
+
+#menu-menu_left-container{
+	padding:0;
+}
+
+.menu-menu_left-container ul{
+	background:#F0F3EB;
+}
+
+.menu-menu_right-container ul{
+	background:#F0F3EB;
+}
+
+.menu li a{
+	background:#ffffff;
+	display:block;
+	padding:5px;
+	margin-left:0;
+	margin:5px 0 5px 0;
+	width:145px;
+	color:#330033;
+	border-top: 1px solid #2A2A2A;	
+	cursor: pointer;
+	font-weight:bold;
+	font-size: 14px;
+}
+
+.menu li a:hover {
+	background:#333333;
+	color:#FFFFFF;
+}
+
+.menu li a:active {
+	background:#E3E9D2;
+	color:#330000;
+}
+
+#text-3{
+	padding:10px;
+	background:#F0F3EB;
+}
+
+#text-4{
+	padding:10px;
+	background:#F0F3EB;
+	text-align: center;
+}

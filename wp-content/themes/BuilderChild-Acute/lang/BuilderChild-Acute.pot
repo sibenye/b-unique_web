@@ -1,0 +1,190 @@
+# Translation of Acute 4.0.0 by iThemes.
+# Copyright (C) 2013 iThemes
+# This file is distributed under the same license as the Acute package.
+# Chris Jean <support@ithemes.com>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Acute 4.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/BuilderChild-Acute\n"
+"POT-Creation-Date: 2013-03-19 10:20-0500\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Chris Jean <support@ithemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: archive.php:21 archive.php:24 archive.php:27 archive.php:30 archive.php:33
+#: archive.php:36
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: archive.php:39
+#, php-format
+msgid "Author Archive for %s"
+msgstr ""
+
+#: archive.php:42
+msgid "Archive"
+msgstr ""
+
+#: archive.php:67 loop-footer.php:18 loop-footer.php:24
+msgid "&laquo; Previous Page"
+msgstr ""
+
+#: archive.php:68 loop-footer.php:19 loop-footer.php:25
+msgid "Next Page &raquo;"
+msgstr ""
+
+#: comments.php:22
+msgid "Comments"
+msgstr ""
+
+#: comments.php:40
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:40
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:47
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:52
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:56
+msgid "Name"
+msgstr ""
+
+#: comments.php:56 comments.php:61
+msgid "<span class='required'>(required)</span>"
+msgstr ""
+
+#: comments.php:61
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:66
+msgid "Website"
+msgstr ""
+
+#: comments.php:74
+msgid "Submit Comment"
+msgstr ""
+
+#: comments.php:84
+msgid "Comments are closed."
+msgstr ""
+
+#: content-gallery.php:19 content.php:19 content-single.php:19
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: content-gallery.php:20 content.php:20 content-single.php:20
+#, php-format
+msgid " on %s"
+msgstr ""
+
+#: content-gallery.php:22 content.php:22 content-single.php:22
+#, php-format
+msgid "%s Comments"
+msgstr ""
+
+#: content-gallery.php:22 content.php:22 content-single.php:22
+msgid "No"
+msgstr ""
+
+#: content-gallery.php:22 content.php:22 content-single.php:22
+msgid "1"
+msgstr ""
+
+#: content-gallery.php:22 content.php:22 content-single.php:22
+msgid "%"
+msgstr ""
+
+#: content-gallery.php:39
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: content-gallery.php:39
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-gallery.php:47 content.php:36 content-single.php:36
+#, php-format
+msgid "Categories : %s"
+msgstr ""
+
+#: content-gallery.php:48 content.php:37 content-single.php:37
+msgid "Tags : "
+msgstr ""
+
+#: content.php:29 content-single.php:29
+msgid "Read More..."
+msgstr ""
+
+#: content.php:30
+msgid "Pages:"
+msgstr ""
+
+#: lib/admin/settings.php:14
+msgid ""
+"In addition to the default Builder settings, Acute give you additional "
+"settings. Included in the settings is the ability to disable the pagination "
+"for this child theme. You have complete control over this setting below."
+msgstr ""
+
+#: lib/admin/settings.php:16
+msgid ""
+"Builder Child Acute comes with paginaiton built in. If you are using a "
+"plugin and do not wish to use the pagination within Acute you can disable it "
+"below."
+msgstr ""
+
+#: lib/admin/settings.php:17
+msgid "Check to remove pagination inside the loop utility."
+msgstr ""
+
+#: lib/admin/settings.php:25
+msgid "Builder Child Acute Settings"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Acute"
+msgstr ""
+
+#. #-#-#-#-#  BuilderChild-Acute.pot (Acute 4.0.0)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#. #-#-#-#-#  BuilderChild-Acute.pot (Acute 4.0.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://ithemes.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A Responsive Builder Child Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "iThemes"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid "blog, business, theme options, multiple layouts, multiple color schemes"
+msgstr ""

@@ -1,0 +1,151 @@
+0.3.0 - 2011-05-16 - Chris Jean
+	Near complete rewrite of most of the JS code and much of the PHP code
+	Added border options to Basic Module Styling and Widget Bar Module
+	Introduce IE support
+	Added Custom CSS option
+	Moved generated CSS files to wp-content/builder-style-manager
+	No longer will new files be generated on save
+	Old stylesheets will automatically be removed to clean up after the old code
+	New generated files will be named to match the name of the style
+	Added "Set to Default" option to color picker
+	
+	Updated:
+		css/editor.css
+		css/normalize-styling.css
+		editor.php to 1.0.0
+		generator.php to 1.0.0
+		js/colorpicker/colorpicker.css
+		js/colorpicker/colorpicker.js
+		js/editor.js to 1.0.0
+		js/stylesheet-lib.js to 1.0.0
+		public.php to 1.0.0
+0.3.1 - 2011-05-17 - Chris Jean
+	Fixed a bug that broke image parsing
+	
+	Updated:
+		js/stylesheet-lib.js to 1.0.1
+0.3.2 - 2011-06-27 - Chris Jean
+	Updated lib/classes to version 1.7.0
+0.3.3 - 2011-06-29 - Chris Jean
+	Fixed an issue with dynamic stylesheet generation not working on the
+		front-end
+	
+	Updated:
+		public.php to version 1.0.1
+0.3.4 - 2011-06-29 - Chris Jean
+	Refreshed the generated zip to make the 0.3.3 fix present in the zip file.
+0.3.5 - 2011-07-01
+	Updated lib/classes to version 1.8.0
+0.4.0 - 2011-07-06 - Chris Jean
+	Updated the editor to support both the 3.0 layout structures and the
+		pre-3.0 layout structures. If you switch an old layout to the new
+		one or vice versa, simply edit each style, save it, and Style
+		Manager will automatically update it to the appropriate format.
+	
+	Updated:
+		editor.php to version 1.0.1
+0.4.1 - 2011-07-06 - Chris Jean
+	Refresh the repo
+0.4.2 - 2011-08-04
+	Updated lib/classes to version 1.10.0
+0.5.0 - 2011-08-18 - Chris Jean
+	Added a check to ensure that Builder or a Builder child theme is running
+	Fixed an issue where a small image in an Image Module will expand to fill
+	Added preliminary style options for the Header Module
+	Removed the lib/ directory as it is no longer needed
+	
+	Removed:
+		lib/
+	Updated:
+		editor.php to 1.1.0
+		init.php
+0.5.1 - 2011-08-18 - Chris Jean
+	Repackaged to fix a zip issue with 0.5.0
+0.5.2 - 2011-08-19 - Chris Jean
+	Fixed duplicate options listed in Post/Page Content Styling > Page Title
+0.5.3 - 2011-10-20 - Chris Jean
+	Fix for new styling in WP 3.3
+	Fix problem with glob on some systems
+	Re-added lib/ directory as it helps keep the latest version of code in
+		case Builder is out of date
+	
+	Added:
+		lib/
+	Updated:
+		css/editor.css
+		generator.php to 1.0.1
+		init.php
+0.5.4 - 2011-10-20 - Chris Jean
+	Fixed issue with stylesheet URL on http sites loaded as https
+	
+	Updated:
+		public.php to 1.0.2
+0.5.5 - 2011-10-26
+	Updated lib/classes to version 1.12.0
+0.5.6 - 2011-11-14
+	Updated lib/classes to version 1.12.1
+0.5.7 - 2011-12-09
+	Updated lib/classes to version 1.13.0
+0.5.8 - 2011-12-12
+	Updated lib/classes to version 1.13.1
+0.5.9 - 2012-02-21
+	Updated lib/classes to version 1.13.2
+0.5.10 - 2012-03-14 - Chris Jean
+	Pi Day Special
+	This release fixes a bug that causes the site preview to shift right
+		when expanding or collapsing option boxes.
+	
+	Updated:
+		js/iframe.js to 1.1.0
+0.5.11 - 2012-06-22
+	Updated lib/classes to version 1.13.3
+0.5.12 - 2012-07-17
+	Updated lib/classes to version 2.0.0
+0.5.13 - 2012-09-24
+	Updated lib/classes to version 2.1.0
+0.5.14 - 2012-09-26
+	Updated lib/classes to version 2.1.1
+0.5.15 - 2012-09-28
+	Updated lib/classes to version 2.1.4
+0.5.16 - 2012-10-18 - Chris Jean
+	Added change to prevent the plugin from running on sites that support
+		Builder's responsive feature.
+0.5.17 - 2012-12-03
+	Updated lib/classes to version 2.1.5
+0.5.18 - 2013-01-09
+	Updated lib/classes to version 2.1.6
+0.6.0 - 2013-01-21 - Chris Jean
+	Added support for Builder 4.0's responsive child themees.
+	Added Active link styling options for the Navigation Module.
+	Updated certain selectors to point to the background-wrapper classes.
+	Fixed some editor styling issues.
+	Fixed bug that prevents resetting options to defaults in Firefox from
+		working properly.
+	Improved Stylesheet Library script's handling of Opera.
+	Added data format notice to prompt users about the two different data
+		formats.
+	
+	Added:
+		css/normalize-legacy-styling.css
+		editor-legacy.php
+		generator-legacy.php
+		public-legacy.php
+	Updated:
+		css/
+		editor.php
+		generator.php
+		init.php
+		js/
+		public.php
+0.6.1 - 2013-01-25
+	Updated lib/classes to version 2.1.7
+0.6.2 - 2013-02-13
+	Updated lib/classes to version 2.1.8
+0.6.3 - 2013-02-15
+	Updated lib/classes to version 2.1.9
+0.6.4 - 2013-02-18 - Chris Jean
+	Added it_bsm_filter_preview_url filter to control the URL used for the preview.
+	
+	Updated:
+		editor.php
+		editor-legacy.php

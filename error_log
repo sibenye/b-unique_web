@@ -1,0 +1,4 @@
+[20-Jul-2013 12:31:04] PHP Fatal error:  Cannot use object of type WP_Error as array in /home3/bubaonli/public_html/b-unique_web/wp-content/themes/Builder/custom-functions.php on line 74
+[20-Jul-2013 12:35:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/bubaonli/public_html/b-unique_web/wp-content/themes/BuilderChild-Acute/page-student-application.php:431) in /home3/bubaonli/public_html/b-unique_web/wp-content/themes/Builder/custom-functions.php on line 81
+[25-Jul-2013 12:27:54] PHP Parse error:  syntax error, unexpected T_ECHO in /home3/bubaonli/public_html/b-unique_web/wp-content/themes/BuilderChild-Acute/page-student-application.php on line 102
+[12-Aug-2013 03:26:37] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home3/bubaonli/public_html/b-unique_web/wp-content/plugins/buba-manager/buba-manager.php on line 111

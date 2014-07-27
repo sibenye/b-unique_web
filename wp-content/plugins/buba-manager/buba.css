@@ -1,0 +1,11 @@
+.invalid-input {
+	border: 1px solid #FF0000;	
+}
+
+input.invalid-input {
+	border: 1px solid #FF0000;	
+}
+
+select.invalid-input {
+	border: 1px solid #FF0000;	
+}

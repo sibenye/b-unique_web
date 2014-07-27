@@ -1,0 +1,6 @@
+[15-Aug-2013 16:12:36] PHP Fatal error:  Call to undefined function  get_header() in /home3/bubaonli/public_html/b-unique_web/wp-content/plugins/gallery-plugin/template/gallery-template.php on line 7
+[15-Aug-2013 16:12:40] PHP Fatal error:  Call to undefined function  get_header() in /home3/bubaonli/public_html/b-unique_web/wp-content/plugins/gallery-plugin/template/gallery-single-template.php on line 1
+[16-Feb-2014 19:11:48] PHP Fatal error:  Call to undefined function  get_header() in /home3/bubaonli/public_html/b-unique_web/wp-content/plugins/gallery-plugin/template/gallery-template.php on line 7
+[16-Feb-2014 19:11:52] PHP Fatal error:  Call to undefined function  get_header() in /home3/bubaonli/public_html/b-unique_web/wp-content/plugins/gallery-plugin/template/gallery-single-template.php on line 1
+[09-Jul-2014 14:22:05 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home3/bubaonli/public_html/b-unique_web/wp-content/plugins/gallery-plugin/template/gallery-single-template.php on line 1
+[09-Jul-2014 14:22:07 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home3/bubaonli/public_html/b-unique_web/wp-content/plugins/gallery-plugin/template/gallery-template.php on line 7

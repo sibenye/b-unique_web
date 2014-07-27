@@ -1,0 +1,358 @@
+/*
+	Builder Style Manager main editor JS code
+	Written by Chris Jean
+	Licensed under GPL v2
+	
+	Version 0.1
+*/
+
+var builder_group_selectors = new Array();
+var builder_style_manager_loaded = false;
+var builder_parsed_overrides = new Array();
+var builder_preview_updates = new Array();
+var builder_intialized_color_pickers = new Array();
+
+function builder_refresh_style_preview() {
+	jQuery(".styling-option").each(
+		function() {
+			builder_update_style_preview(this, 'builder_refresh_style_preview');
+		}
+	);
+	
+//	console.log(builder_preview_updates);
+}
+
+/*var builder_preview_element_hover = function() {
+	console.log(this);
+	console.log("Hover");
+	jQuery(this).addClass("hover");
+};
+
+var builder_preview_element_unhover = function() {
+	console.log("Unhover");
+	jQuery(this).removeClass("hover");
+};*/
+
+function builder_update_style_preview(node, source, override) {
+	override = (override == undefined) ? false : override;
+	
+	node = builder_parse_node(node, source);
+	
+//	if(builder_preview_updates[node["selector"] + " - " + node["attribute"]] == undefined) {
+//		builder_preview_updates[node["selector"] + " - " + node["attribute"]] = 1;
+//	}
+//	else {
+//		builder_preview_updates[node["selector"] + " - " + node["attribute"]]++;
+//	}
+//	console.log(node["selector"] + " - " + node["attribute"] + ": " + builder_preview_updates[node["selector"] + " - " + node["attribute"]] );
+	
+	if(node === false) {
+//		console.log("Fail: " + source);
+		return;
+	}
+	
+	if(node["value"] != '') {
+//		console.log("Setting (" + node["selector"] + ") (" + node["attribute"] + ") to " + node["value"]);
+		
+//		var hover_matches = node["selector"].match(/^(.+):hover(.*)/);
+		
+//		if(hover_matches == undefined) {
+			jQuery('#style-preview').contents().find(node["selector"]).css(node["attribute"], node["value"]);
+/*		}
+		else {
+			var element_selector = hover_matches[1];
+			var hover_selector = hover_matches[1] + ".hover" + hover_matches[2];
+			
+			jQuery('#style-preview').contents().find(hover_selector).css(node["attribute"], node["value"]);
+			
+			jQuery('#style-preview').contents().find(element_selector).hover(builder_preview_element_hover, builder_preview_element_unhover);
+		}*/
+	}
+	else if(builder_style_manager_loaded && (override == false)) {
+//		console.log("Unsetting (" + node["selector"] + ")");
+//		jQuery('#style-preview').contents().find(node["selector"]).css(node["attribute"], 'transparent');
+		
+		
+//		var hover_matches = node["selector"].match(/^(.+):hover(.*)/);
+		
+//		if(hover_matches == undefined) {
+			jQuery('#style-preview').contents().find(node["selector"]).css(node["attribute"], null);
+/*		}
+		else {
+			var element_selector = hover_matches[1];
+			var hover_selector = hover_matches[1] + ".hover" + hover_matches[2];
+			
+			jQuery('#style-preview').contents().find(hover_selector).css(node["attribute"], null);
+			
+			jQuery('#style-preview').contents().find(element_selector).unbind('mouseenter', builder_preview_element_hover);
+			jQuery('#style-preview').contents().find(element_selector).unbind('mouseleave', builder_preview_element_unhover);
+		}*/
+	}
+/*	else {
+		console.log("Did nothing with " + node["selector"]);
+		console.log(override);
+	}*/
+	
+	builder_update_overrides(node["group"], node["attribute"]);
+	builder_update_syncs(node["group"], node["attribute"]);
+	
+	if(override == false) {
+		builder_parsed_overrides = new Array();
+	}
+}
+
+function builder_update_syncs(group, attribute) {
+	var syncs_data = jQuery("#" + group + "-" + attribute + "-sync").val();
+	
+	if(syncs_data == undefined) {
+		return false;
+	}
+	
+	var syncs = syncs_data.split(",");
+	var val = jQuery("#" + group + "-" + attribute).val();
+	
+	for(count = 0; count < syncs.length; count++) {
+		var id = syncs[count];
+		var cur_val = val;
+		
+		var matches = id.match(/^(.+)---(.+)/);
+		
+		if(matches != undefined) {
+			id = matches[1];
+			
+			if(cur_val != "") {
+				var val_matches = val.match(/(\d+)(.+)/);
+				
+				cur_val = val_matches[1] * matches[2];
+				cur_val += val_matches[2];
+			}
+		}
+		
+		jQuery("#" + id).val(cur_val);
+		builder_update_style_preview(jQuery("#" + id).get(0), 'builder_update_syncs: #' + id, true);
+	}
+}
+
+function builder_update_overrides(group, attribute) {
+	var val = jQuery("#" + group + "-override").val();
+//	console.log("Searching for overrides for #" + group + "-override");
+//	console.log("Found one: " + val);
+	
+	if(val == undefined) {
+		return;
+	}
+	
+	var overrides = val.split(",");
+	
+	for(count = 0; count < overrides.length; count++) {
+//		console.log(overrides[count]);
+		var input_data = jQuery("#" + overrides[count] + "-inputs").val();
+		
+//		console.log("Found inputs: " + input_data);
+		var inputs = input_data.split(",");
+		
+		for(input_count = 0; input_count < inputs.length; input_count++) {
+			var regex = new RegExp(attribute + "$");
+			if((builder_parsed_overrides[inputs[input_count]] == undefined) && (inputs[input_count].match(regex))) {
+//				console.log("Running " + inputs[input_count]);
+				
+				builder_parsed_overrides[inputs[input_count]] = 1;
+				
+				builder_update_style_preview(jQuery("#" + inputs[input_count]).get(0), 'builder_update_overrides: #' + inputs[input_count], true);
+			}
+//			else {
+//				console.log("Skipped " + inputs[input_count]);
+//			}
+		}
+	}
+}
+
+function builder_parse_node(node, source) {
+	var node_data = new Array();
+	
+//	console.log(jQuery(node).get(0));
+	
+	if(jQuery(node).attr("name") == undefined) {
+//		console.log("Unable to find name for:");
+//		console.log(jQuery(node).get(0));
+//		console.log("Source: " + source);
+		return false;
+	}
+	
+	var matches = jQuery(node).attr("name").match(/^([^-]+)-(.+)/);
+	
+	node_data["name"] = jQuery(node).attr("name");
+	node_data["group"] = matches[1];
+	node_data["attribute"] = matches[2];
+	node_data["value"] = jQuery(node).val();
+	
+	if(typeof(builder_group_selectors[node_data["group"]]) != "undefined") {
+		node_data["selector"] = builder_group_selectors[node_data["group"]];
+	}
+	else {
+		node_data["selector"] = jQuery("#" + node_data["group"] + "-selector").val();
+		builder_group_selectors[node_data["group"]] = node_data["selector"];
+	}
+	
+	return node_data;
+}
+
+function builder_update_background_option(node) {
+	var matches = jQuery(node).attr("name").match(/^(.+)-option$/);
+	
+	var main_name = matches[1];
+	var value = jQuery(node).val();
+	
+	if(value == 'image') {
+		if(builder_style_manager_loaded)
+			jQuery("#" + main_name).val(jQuery("#" + main_name + "-backup").val());
+		
+		jQuery("." + main_name + "-upload-link").show();
+	}
+	else {
+		if((jQuery("#" + main_name).val() != '') && (jQuery("#" + main_name).val() != 'none'))
+			jQuery("#" + main_name + "-backup").val(jQuery("#" + main_name).val());
+		jQuery("#" + main_name).val(value);
+		
+		jQuery("." + main_name + "-upload-link").hide();
+	}
+	
+	builder_update_style_preview(jQuery("#" + main_name).get(0), "builder_update_background_option: #" + main_name);
+}
+
+function builder_enable_color_picker(node) {
+	if(true === builder_intialized_color_pickers[jQuery(node).attr("name")])
+		return;
+	
+	jQuery(node).unbind('focus');
+	
+	jQuery(node).ColorPicker(
+		{
+			onChange: function(color, el) {
+				jQuery(el).val(color);
+				builder_update_style_preview(el, 'colorpicker');
+			},
+			onBeforeShow: function () {
+				jQuery(this).ColorPickerSetColor(this.value);
+			}
+		}
+	).bind('keyup',
+		function() {
+			jQuery(this).ColorPickerSetColor(this.value);
+		}
+	);
+	
+	builder_intialized_color_pickers[jQuery(node).attr("name")] = true;
+}
+
+function builder_load_preview() {
+	var url_input = jQuery("#builder_preview_url");
+	var url = url_input.val();
+	var iframe = '<iframe src="' + url + '" name="style-preview" id="style-preview" frameborder="0"></iframe>';
+	
+	jQuery(url_input).replaceWith(iframe);
+	
+	builder_iframe_resize();
+	jQuery('#style-preview').load(
+		function() {
+			builder_style_manager_loaded = false;
+			builder_refresh_style_preview();
+			builder_style_manager_loaded = true;
+		}
+	);
+}
+
+jQuery(document).ready(
+	function() {
+		jQuery(".styling-option").keyup(
+			function() {
+				builder_update_style_preview(this, 'keyup');
+			}
+		);
+		jQuery(".styling-option").change(
+			function() {
+				builder_update_style_preview(this, 'change');
+			}
+		);
+		
+		builder_load_preview();
+		
+		jQuery("[name$='-color']").focus(
+			function() {
+				builder_enable_color_picker(this);
+			}
+		);
+		
+		
+		jQuery(".background-image-option").change(
+			function() {
+				builder_update_background_option(this);
+			}
+		).each(
+			function() {
+				builder_update_background_option(this);
+			}
+		);
+		
+		jQuery(".show-hide-wrapper a").click(
+			function() {
+				var target = jQuery(this).parent().siblings(".show-hide-target");
+				
+				if(jQuery(target).css("display") == "none") {
+					jQuery(target).show();
+					jQuery(this).html("(Hide Options)");
+				}
+				else {
+					jQuery(target).hide();
+					jQuery(this).html("(Show Options)");
+				}
+				
+				return false;
+			}
+		);
+		
+		jQuery("#posts-filter").submit(
+			function() {
+				jQuery("#posts-filter :input").each(
+					function() {
+						if('' == jQuery(this).val()) {
+							jQuery(this).remove();
+						}
+					}
+				);
+				return false;
+			}
+		);
+		
+		jQuery("input[type='submit']:disabled").removeAttr("disabled");
+	}
+);
+
+function builder_get_array_values(name) {
+	var values = jQuery("input[name='" + name + "[]']").map(
+		function() {
+			return jQuery(this).val()
+		}
+	).get();
+	
+	return values;
+}
+
+if(!window.console) {
+	window.console = new function() {
+		this.log = function(str) {};
+		this.dir = function(str) {};
+	};
+}
+
+function clear_fade_messages() {
+	jQuery(document).ready(
+		function() {
+			setTimeout(
+				function() {
+					jQuery(".updated.fade").slideUp('slow');
+				}, 5000
+			);
+		}
+	);
+}

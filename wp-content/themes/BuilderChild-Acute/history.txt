@@ -1,0 +1,49 @@
+0.0.1 - 2011-08-26 - Justin Kopepasah
+	Initial Commit Version
+0.0.2 - 2011-08-29 - Justin Kopepasah
+	Finished Header Module Styling
+	Finished navigation module styling
+	Started styling widget module
+	Added three alternate module styles for the widget bars
+0.0.3 - 2011-08-29 - Justin Kopepasah
+	Styles for content and sidebars.
+	Custom touches on Meta, Category and Tag Cloud widgets
+	Several other style modifications
+0.0.4 - 2011-09-06 - Justin Kopepasah
+	Finished default styles
+	Added templates for archive and single
+	Added gallery post format view
+	Custom styles for search widget in header and content area
+0.0.5 - 2011-09-07 - Justin Kopepasah
+	Added pagination to the loop-footer.
+	Styled extensions for acute
+0.1.0 - 2011-09-08 - Justin Kopepasah
+	Added comment styles.
+	Modified content-gallery and content-single.
+	Initial team testing version.
+1.0.0 - 2011-09-09 - Justin Kopepasah
+	Various IE Fixes.
+	Moved comment link after edit link.
+	Initial Release Version! #BOOM
+1.0.1 - 2011-09-12 - Justin Kopepasah
+	Added Screenshot
+1.0.2 - 2011-09-20 - Justin Kopepasah
+	Removed gradient from widget bars with no background when following a widget bar with no background.
+	Added styles for input[type="button"].
+	Modified image module styles.
+	Added styles for Slideshow plugin.
+	Fixed widget text color in header module.
+	Fixed search submit button when in header.
+	Fix position for navigation for slider extensions.
+	Fixed search bar when in the left sidebar.
+	Changed Screenshot
+1.0.3 - 2011-10-11 - Justin Kopepasah
+	Fixed Issue with Search Text Not Showing
+1.0.4 - 2011-10-11 - Justin Kopepasah
+	Fixed write failure for GIT
+1.0.5 - 2011-11-16 - Justin Kopepasah
+	Fixed issues with settings not showing up when Style Manager is activated.
+1.1.0 - 2012-03-01 - Justin Kopepasah
+	Fixed a major bug that caused an incompatibility with loopbuddy.
+4.0.0 - 2013-03-19 - Cody Smith
+	Added support for Builder 4.0 (aka Builder Responsive).

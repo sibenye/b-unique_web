@@ -1,0 +1,28 @@
+/*********************************************
+	Navigation Module
+*********************************************/
+
+.builder-module-navigation-outer-wrapper {
+	padding: .5em 1em 0 1em;
+}
+.builder-module-navigation .builder-module-element {
+	padding: 0 .5em;
+}
+.builder-module-navigation ul.menu > li > a {
+	border: 0;
+}
+.builder-module-navigation ul.menu > li:first-child {
+	border: 0;	
+}
+.builder-module-navigation ul.menu > li:last-child {
+	border: 0;
+}
+.builder-module-navigation li a,
+.builder-module-navigation li.current_page_item li a,
+.builder-module-navigation li.current-cat li a {
+	background: #686868;
+	margin: 0 .5em .5em 0;
+}
+.builder-module-navigation li li a {
+	margin: 0;
+}

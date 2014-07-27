@@ -1,0 +1,318 @@
+
+
+
+
+.rednaoFormContainer{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+
+
+.rednaoFormContainer .rednao_control_label{
+
+    width: 160px !important;
+    padding-top: 5px !important;
+    text-align: right !important;
+    display: inline !important;
+    margin-bottom: 5px !important;
+}
+
+.rednaoFormContainer .redNaoControls{
+    text-align:left !important;
+    display: inline-block !important;
+    margin-left: 5px !important;
+}
+
+.rednaoFormContainer .redNaoHelp{
+    margin:0px !important;
+    padding:0px !important;
+    text-align:left !important;
+}
+
+.rednaoFormContainer .redNaoLegend{
+    margin:0px !important;
+    padding:0px !important;
+    text-align:left !important;
+    font-size:21px !important;
+    line-height:40px !important;
+    color:#333 !important;
+    border:0 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    width:100% !important;
+}
+
+.rednaoFormContainer .redNaoInputText{
+
+    height:20px !important;
+    width:200px !important;
+    margin:0 !important;
+    vertical-align:middle !important;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -webkit-transition: border linear .2s, box-shadow linear .2s !important;
+    -moz-transition: border linear .2s, box-shadow linear .2s !important;
+    -o-transition: border linear .2s, box-shadow linear .2s !important;
+    transition: border linear .2s, box-shadow linear .2s !important;
+    padding: 4px 6px !important;line-height: 20px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    box-sizing:content-box !important;
+    -moz-box-sizing:content-box !important; /* Firefox */
+}
+
+.rednaoFormContainer .redNaoPrepend{
+
+    margin-right: -5px !important;
+    vertical-align: top !important;
+    display: inline-block !important;
+    width: auto !important;
+    height: 20px !important;
+    min-width: 16px !important;
+    padding: 4px 5px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    text-shadow: 0 1px 0 #fff !important;
+    background-color: #eee !important;border: 1px solid #ccc !important;
+    -webkit-border-radius: 4px 0 0 4px !important;
+    -moz-border-radius: 4px 0 0 4px !important;
+    border-radius: 4px 0 0 4px !important;
+}
+
+.redNaoPrepend, .redNaoAppend{
+    box-sizing:content-box !important;
+    -moz-box-sizing:content-box !important; /* Firefox */
+
+}
+
+.rednaoFormContainer .redNaoAppend{
+    -webkit-border-radius: 0 4px 4px 0 !important;
+    -moz-border-radius: 0 4px 4px 0 !important;
+    border-radius: 0 4px 4px 0 !important;
+    margin-left: -6px !important;
+    vertical-align: top !important;
+    display: inline-block !important;
+    width: auto !important;
+    height: 20px !important;
+    min-width: 16px !important;
+    padding: 4px 5px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    text-shadow: 0 1px 0 #fff !important;
+    background-color: #eee !important;
+    border: 1px solid #ccc !important;
+}
+
+.rednaoFormContainer .redNaoRealCheckBox{
+    vertical-align:baseline !important;
+}
+
+.rednaoFormContainer .redNaoTextAreaInput{
+    width:300px !important;
+    height:50px !important;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -webkit-transition: border linear .2s, box-shadow linear .2s !important;
+    -moz-transition: border linear .2s, box-shadow linear .2s !important;
+    -o-transition: border linear .2s, box-shadow linear .2s !important;
+    transition: border linear .2s, box-shadow linear .2s !important;
+    padding: 4px 6px !important;
+}
+
+.rednaoFormContainer .redNaoTextAreaInput.redNaoTextAreaInputWordCount{
+    padding: 4px 6px 0px 4px !important;
+}
+
+.rednaoFormContainer .smartFormsCharacterCount{
+    display: block !important;
+    font-size: 13px !important;
+    line-height: 14px !important;
+    text-align: right;
+    color: #afafaf;
+}
+
+.rednaoFormContainer .smartFormsCharacterCount.smartFormsAlmostFull{
+    color:#5c0002;
+}
+
+
+.rednaoFormContainer .redNaoInputRadio{
+    margin-right: 5px !important;
+    width:auto !important;
+    margin-top:-1px !important;
+
+
+}
+
+.rednaoFormContainer .redNaoRadio{
+    padding-right:20px !important;
+    margin:0px 1px 0 0px !important;
+    display: block !important;
+}
+
+.rednaoFormContainer .redNaoInputCheckBox{
+    float: left !important;
+    margin-top: 4px !important;
+    margin-right: 5px !important;
+    width:auto !important;
+}
+
+.rednaoFormContainer .redNaoCheckBox{
+    padding-top:3px !important;
+    margin:0px 3px 0 0px !important;
+    display: block !important;
+    line-height: 18px
+}
+
+.rednaoFormContainer form{
+    text-align: center !important;
+    display: inline-block !important;
+}
+
+.rednaoFormContainer{
+    text-align: center !important;
+}
+
+.rednaoFormContainer .redNaoSelect{
+    width:auto !important;
+    border: 1px solid #ccc !important;
+    height:30px !important;
+    line-height:30px !important;
+    padding:4px 6px !important;
+}
+
+.redNaoClearDiv{
+    clear: both;
+}
+
+.rednaoFormContainer .redNaoDonationButton{
+    margin-left:0px !important;
+    width:auto !important;
+    height:auto !important;
+}
+
+.formelements{
+    margin:5px !important;
+}
+
+.rednao_label_container{
+    text-align: right !important;
+    display: inline-block !important;
+    vertical-align: top !important;
+}
+
+.redNaoCompactForm .rednao_label_container{
+    text-align: left !important;
+    display: block !important;
+    margin-bottom: 5px;
+}
+
+.redNaoCompactForm.rednaoFormContainer .redNaoTextArea{
+    width:100% !important;
+}
+
+.redNaoCompactForm .rednao_label_container,.redNaoCompactForm .redNaoControls
+{
+    width:100% !important;
+}
+
+.rednaoFormContainer .redNaoInputText.redNaoInvalid,.rednaoFormContainer .redNaoTextAreaInput.redNaoInvalid{
+    border: 1px solid red !important;
+
+
+}
+
+
+.rednaoFormContainer .redNaoInputText.redNaoDisabledElement{
+    background-color: #f5f5f5 !important;
+}
+
+.rednaoFormContainer .redNaoInputText.redNaoTwoColumns,.rednaoFormContainer .redNaoSelect.redNaoTwoColumns{
+    width:140px !important;
+}
+
+.redNaoSelect.redNaoInvalid{
+    background-color: red !important;
+}
+
+.rednaoFormContainer .redNaoInputText.redNaoTwoColumns.redNaoInputArea{
+    width:60px !important;
+}
+
+.rednaoFormContainer .redNaoTwoColumnsDiv:first-child
+{
+    margin-right:5px !important;
+}
+
+.rednaoFormContainer .redNaoCityDiv,.rednaoFormContainer .redNaoZipDiv
+{
+    margin-right:5px !important;
+}
+
+.redNaoHelper{
+    font-size: 10px !important;
+    color: #909090 !important;
+    line-height: 10px !important;
+    margin-left: 1px !important;
+    display: block !important;
+}
+
+
+.rednaoFormContainer .redNaoInputText.redNaoOneColumn{
+    width:300px !important;
+}
+
+.redNaoStreetAddress1Div,.redNaoStreetAddress2Div,.redNaoCityDiv,.redNaoStateDiv
+{
+    margin-bottom: 10px !important;
+}
+
+
+.rednaoFormContainer .redNaoTwoColumnsDiv{
+    display: inline-block !important;
+}
+
+.rednaoFormContainer .redNaoInputText.redNaoNumber{
+    width:80px !important;
+    text-align: right;
+}
+
+.redNaoWait,input.redNaoWait[type="submit"]{
+    cursor: wait;
+}
+
+.redNaoHorizontalElements{
+    float: left;
+}
+
+.redNaoRadio div{
+    margin-right:4px;
+}
+.redNaoCheckBox div{
+    margin-right:4px;
+}
+
+.redNaoCheckBox{
+    padding-bottom: 1px;
+}
+
+.redNaoRadio{
+    padding-bottom: 1px;
+}
+
+.redNaoInvalidInput{
+    background-color: #ff0000;
+    color:#ffffff;
+}
+

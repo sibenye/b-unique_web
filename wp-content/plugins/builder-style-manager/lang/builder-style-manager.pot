@@ -1,0 +1,120 @@
+# Translation of   by .
+# Copyright (C) 2013 
+# This file is distributed under the same license as the  package.
+# Chris Jean <support@ithemes.com>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/builder-style-manager\n"
+"POT-Creation-Date: 2013-02-18 13:51-0600\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Chris Jean <support@ithemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: editor-legacy.php:632 editor.php:657
+msgid "Style Editor"
+msgstr ""
+
+#: generator-legacy.php:94 generator.php:103
+msgid "Unable to find the requested Builder Style id"
+msgstr ""
+
+#: lib/classes/it-core-class.php:205
+msgid "Screen Info"
+msgstr ""
+
+#: lib/classes/it-core-class.php:239
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: lib/classes/it-dialog.php:43
+msgid ""
+"This feature requires inline frames. You have iframes disabled or your "
+"browser does not support them."
+msgstr ""
+
+#: lib/classes/it-dialog.php:45
+msgid "Close"
+msgstr ""
+
+#: lib/classes/it-image-utility.php:62
+#, php-format
+msgid "File &#8220;%s&#8221; doesn&#8217;t exist?"
+msgstr ""
+
+#: lib/classes/it-image-utility.php:65
+msgid "The GD image library is not installed."
+msgstr ""
+
+#: lib/classes/it-image-utility.php:72
+#, php-format
+msgid "File &#8220;%s&#8221; is not an image."
+msgstr ""
+
+#: lib/classes/it-image-utility.php:149 lib/classes/it-image-utility.php:153
+#: lib/classes/it-image-utility.php:159
+msgid "Resize path invalid"
+msgstr ""
+
+#: lib/classes/it-post-type.php:473
+msgctxt "post"
+msgid "Add New"
+msgstr ""
+
+#: lib/classes/it-post-type.php:474
+#, php-format
+msgctxt "post"
+msgid "Add New %s"
+msgstr ""
+
+#: lib/classes/it-post-type.php:475
+#, php-format
+msgctxt "post"
+msgid "Edit %s"
+msgstr ""
+
+#: lib/classes/it-post-type.php:476
+#, php-format
+msgctxt "post"
+msgid "New %s"
+msgstr ""
+
+#: lib/classes/it-post-type.php:477
+#, php-format
+msgctxt "post"
+msgid "View %s"
+msgstr ""
+
+#: lib/classes/it-post-type.php:478
+#, php-format
+msgctxt "post"
+msgid "Search %s"
+msgstr ""
+
+#: lib/classes/it-post-type.php:479
+#, php-format
+msgctxt "post"
+msgid "No %s found"
+msgstr ""
+
+#: lib/classes/it-post-type.php:480
+#, php-format
+msgctxt "post"
+msgid "No %s found in trash"
+msgstr ""
+
+#: lib/classes/it-post-type.php:481
+#, php-format
+msgctxt "post"
+msgid "Parent %s:"
+msgstr ""
+
+#: lib/classes/it-post-type.php:482
+#, php-format
+msgctxt "post"
+msgid "All %s"
+msgstr ""

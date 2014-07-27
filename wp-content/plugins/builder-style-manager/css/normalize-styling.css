@@ -1,0 +1,10 @@
+#comments ol.commentlist {
+	background: transparent;
+}
+.builder-module-sidebar {
+	background: transparent;
+}
+.site-title a:hover,
+.site-tagline a:hover {
+	font-size: inherit;
+}
